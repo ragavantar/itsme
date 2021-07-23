@@ -1,0 +1,82 @@
+.education {
+    display: flex;
+    justify-content: center;
+    /* background: rgb(158, 108, 72); */
+}
+.skills, .education, .experience{
+padding-bottom: 25px;
+border-bottom: 1px solid var(--primary-color);
+}
+
+.item {
+    margin: 10px;
+    line-height: 30px;
+    word-spacing: 5px;
+}
+
+.item .title {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item .description {
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+.skills .item .title {
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+}
+
+.others{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background: var(--primary-color);
+    padding: 20px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 1s;   
+}
+
+.card a {
+    color: white;
+}
+
+.skills .item {
+    display: inline-block;
+    width: 100px;
+    padding-left: 20px;
+    text-align: center;
+    opacity: 0;
+}
+
+.skills.animate .item{
+    animation: fade-in 0.3s forwards;
+}
+@media screen and (max-width: 600px) {
+    .education{
+        flex-direction: column;
+        position: relative;
+    }
+    .education .details{
+        position: absolute;
+        background: rgba(255, 255, 255, 0.479);
+        width: 100%;
+    }    
+}

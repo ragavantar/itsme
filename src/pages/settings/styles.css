@@ -1,0 +1,20 @@
+.settings label{
+    color: var(--primary-color);
+}
+
+.settings input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.settings button{
+    padding: 8px 15px;
+    background: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 16px;
+}

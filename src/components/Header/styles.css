@@ -1,0 +1,68 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav .left a {
+    margin: 10px;
+}
+
+nav .right a {
+    margin: 10px;
+}
+
+.sub {
+    display: inline;
+    font-size: 22px;
+    margin-right: 10px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.mobTop .icon {
+    display: none;
+    float: right;
+    pointer-events: all;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid black;
+    }
+
+    nav.hide a {
+        display: none;
+        animation: fade-in 1s reverse;
+    }
+
+    nav.show a {
+        animation: fade-in 1s;
+    }
+
+    .sub {
+        display: none;
+    }
+
+    .mobTop a {
+        display: inline !important;
+    }
+
+    .mobTop .icon {
+        display: block;
+    }
+}
